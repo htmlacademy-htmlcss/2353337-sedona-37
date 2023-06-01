@@ -103,13 +103,14 @@
                 Аппартаменты
               </label>
             </li>
+          </ul>
         </fieldset>
         <fieldset class="catalog-filter-group filter-price">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <label  class="visually-hidden" for="price-from">Стоимость от</label>
-            <input class="price-input" type="text" name="price-from" id="price-from" min="0" placeholder="0 от">
+            <input class="price-input" type="number" name="price-from" id="price-from" min="0" placeholder="0 от">
           <label class="visually-hidden" for="price-till">Стоимость до
-            <input class="price-input" type="text" name="price-till" id="price-till" max="9000" placeholder="9000 до">
+            <input class="price-input" type="number" name="price-till" id="price-till" max="9000" placeholder="9000 до">
           </label>
         </fieldset>
         <button class="button-use" type="submit">Применить</button>
@@ -135,7 +136,7 @@
       <ul class="hotel-card-list">
         <li class="hotel-card-item">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-img" src="Amara Resort & Spa" alt="Описагние картинки.">
+            <img class="hotel-img" src="#" alt="Описагние картинки.">
             <h3 class="hotel-name">Amara Resort & Spa</h3>
           </a>
           <p>
@@ -153,8 +154,8 @@
         </li>
         <li class="hotel-card-item">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-img" src="Amara Resort & Spa" alt="Описагние картинки.">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <img class="hotel-img" src="#" alt="Описагние картинки.">
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
           </a>
           <p>
             <span class="sort">Гостиница</span>
@@ -168,24 +169,6 @@
             <span class="vissualy-hidden">Уровень - 4 звезды</span>
           </p>
           <span class="rating">Рейтинг: 9,2</span>
-        </li>
-        <li class="hotel-card-item">
-          <a class="hotel-card-link" href="#">
-            <img class="hotel-img" src="Amara Resort & Spa" alt="Описагние картинки.">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
-          </a>
-          <p>
-            <span class="sort">Гостиница</span>
-            <span class="value">От 4000 ₽</span>
-          </p>
-          <p>
-            <a class="hotel-link" href="#">Подробнее</a>
-            <button class="favorites" type="submit">В избранное</button>
-          </p>
-          <p class="stars">
-            <span class="vissualy-hidden">Уровень - 4 звезды</span>
-          </p>
-          <span class="rating">Рейтинг: 8,5</span>
         </li>
         <li class="hotel-card-item">
           <a class="hotel-card-link" href="#">
@@ -223,7 +206,45 @@
           </p>
           <span class="rating">Рейтинг: 5,0</span>
         </li>
+        <li class="hotel-card-item">
+          <a class="hotel-card-link" href="#">
+            <img class="hotel-img" src="#" alt="Описагние картинки.">
+            <h3 class="hotel-name">GreenTree Inn</h3>
+          </a>
+          <p>
+            <span class="sort">Гостиница</span>
+            <span class="value">От 1500 ₽</span>
+          </p>
+          <p>
+            <a class="hotel-link" href="#">Подробнее</a>
+            <button class="favorites" type="submit">В избранное</button>
+          </p>
+          <p class="stars">
+            <span class="vissualy-hidden">Уровень - 2 звезды</span>
+          </p>
+          <span class="rating">Рейтинг: 5,0</span>
+        </li>
       </ul>
+      <ol class="catalog-pages-list">
+        <li class="catalog-pages-item active-item">
+          <a class="catalog-pages-link current-page">1</a>
+        </li>
+        <li class="catalog-pages-item">
+          <a class="catalog-pages-link" href="#">2</a>
+        </li>
+        <li class="catalog-pages-item">
+          <a class="catalog-pages-link" href="#">3</a>
+        </li>
+        <li class="catalog-pages-item">
+          <a class="catalog-pages-link" href="#">4</a>
+        </li>
+        <li class="catalog-pages-item">
+          <a class="catalog-pages-link" href="#">...</a>
+        </li>
+        <li class="catalog-pages-item">
+          <a class="catalog-pages-link" href="#">10</a>
+        </li>
+      </ol>
     </section>
 
   </main>
