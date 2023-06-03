@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <p>
+        <a class="logo">
+          <img class="logo-img" src="#" alt="Логотип">
+        </a>
+      </p>
+      <nav class="nav">
+        <ul class="nav-lists">
+          <li class="nav-item">
+            <a class="nav-link nav-link-active" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О Cедоне</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="user-nav-lists">
+          <li class="user-nav-item">
+            <a href="#" class="user-nav-link">
+              <p class="visually-hidden">Поиск</p>
+            </a>
+          </li>
+          <li class="user-nav-item">
+            <a class="user-nav-link" href="#">
+              <p class="visually-hidden">Избранное</p>
+              <p class="nubber">12</p>
+            </a>
+          </li>
+          <li class="user-nav-item">
+            <a class="user-nav-link" href="#">
+              <p class="user-nav-button">Хочу сюда</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
+      <section class="hero">
+        <h2 class="visual-hidden">Великолепная Седона</h2>
+        <img class="hero-img" src="#" alt="Добро пожаловать в великолепную Седону.">
+      </section>
+      <section class="advantages">
+        <h2 class="visual-hidden">Преимущества Седоны</h2>
+        <header class="section-head">
+          <p class="section-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </header>
+      </section>
+      <section class="advantages-list">
+        <ul class="advantage-items">
+          <li class="advantage-item">
+            <h3>Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="advantage-img" src="#" alt="Верхние этажи домов на фоне горных вершин">
+          </li>
+          <li class="advantage-item">
+            <h3>Небольшая площадь</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantage-item">
+            <h3>Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantage-item">
+            <h3>Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantage-item">
+            <img src="#" class="advantage-img" alt="Каньон">
+            <h3>Там есть мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <header class="section-head">
+          <p class="section-caption">Приезжайте в Седону отдохнуть в комфорте и уюте! </p>
+          <p class="section-text">Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино! </p>
+          </li>
+          <li class="service-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="service-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search-hotel">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <header class="section-head">
+          <p class="section-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="section-text">Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <a class="search-hotel-link" href="#">
+          <span>Поиск гостиницы в Седоне</span>
+        </a>
+      </section>
+    </main>
+    <footer class="page-foter">
+      <section class="mailing">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="section-caption">Подпишитесь на рассылку</p>
+        <p class="section-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="email" name="email" placeholder="Ваш e-mail" id="email" required>
+          <button class="button-mailing" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <p class="container">
+        <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p class="container">
+        <a class="html_academy-link" href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип HTML Academy">
+        </a>
+      </p>
+    </footer>
+    <div class="search-container">
+      <form class="search-hotel-modal" action="https://echo.htmlacademy.ru/" name="modal-search" method="post">
+        <p>Поиск гостиницы в Седоне</p>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть окно поиска</span>
+        </button>
+        <fieldset class="visit-date">
+          <label>
+            Дата заезда: <input class="calendar" type="date" name="arrival" value="2020-04-27"
+            min="2020-04-27">
+            <span class="wrong data">Мы не можем отправить вас в прошлое.</span>
+          </label>
+        </fieldset>
+        <fieldset class="visit-date">
+          <label>
+            Дата выезда: <input class="calendar" type="date" name="departure" value="2023-09-01"
+            min="2020-04-28">
+            <span class="good-date">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+        </fieldset>
+        <fieldset class="number-guests">
+          <legend class="visually-hidden">Количество взрослых гостей</legend>
+          <label for="adult"> Взрослые:</label>
+            <button class="minus-button">-</button>
+            <input class="adult" type="number" name="adult" id="adult" value="2" min="1">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+          <button class="plus-button">+</button>
+        </fieldset>
+        <fieldset class="number-guests">
+          <label for="kids">Дети:</label>
+            <span class="explanation">i</span>
+            <span class="explanation-kids visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            <button class="minus-button">-</button>
+            <input class="kids" type="number" name="kids" id="kids" value="2" min="0">
+            <button class="plus-button">+</button>
 
+        </fieldset>
+        <button class="modal-search-button" type="submit">Найти</button>
+      </form>
+    </div>
   </body>
+
 </html>
