@@ -45,6 +45,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  padding: 0;
 }
 
 .user-navigation-link {
@@ -164,7 +165,7 @@ body {
   height: 52px;
   background: #82B3D3;
   border-style: none;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -183,19 +184,29 @@ body {
   color: #000000;
 }
 
+/*---------------модальное окно-----------------*/
+
+.modal-overlay {
+  width: 1280px;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+
 .modal-container {
   width: 717px;
   height: 576px;
   background-color: #FFFFFF;
   padding: 64px 70px;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  font-weight: 700;
 }
 
-.modal-form p {
+.modal-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .modal-close {
@@ -207,3 +218,101 @@ body {
   border: 0;
   border-radius: 50%;
 }
+
+.modal-form label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-form input {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: 0;
+}
+
+.dates {
+  width: 440px;
+  height: 48px;
+}
+
+.modal-form span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.visit-date p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+.wrong-date {
+  color: #FF5757;
+}
+
+.buton-conteiner {
+  width: 110px;
+}
+
+.number-guests button {
+  border: 0;
+}
+
+.button-control {
+  width: 40px;
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.volume-guests {
+  font-family: inherit;
+  width: 31px;
+  text-align: center;
+}
+
+.explanation {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #82B3D3;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.explanation-kids {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container-note {
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-search-button {
+  width: 577px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 10px;
+  border: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*---------------Каталог-----------------*/
