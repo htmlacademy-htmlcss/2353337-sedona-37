@@ -4,206 +4,242 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
-    <header class="page-header">
-      <p>
-        <a class="logo">
-          <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
-        </a>
-      </p>
-      <nav class="nav">
-        <ul class="nav-lists">
-          <li class="nav-item">
-            <a class="nav-link nav-link-active" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О Cедоне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="user-nav-lists">
-          <li class="user-nav-item">
-            <a href="#" class="user-nav-link">
-              <p class="visually-hidden">Поиск</p>
-            </a>
-          </li>
-          <li class="user-nav-item">
-            <a class="user-nav-link" href="#">
-              <p class="visually-hidden">Избранное</p>
-              <p class="nubber">12</p>
-            </a>
-          </li>
-          <li class="user-nav-item">
-            <a class="user-nav-link" href="#">
-              <p class="user-nav-button">Хочу сюда</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
-      <section class="hero">
-        <h2 class="visual-hidden">Великолепная Седона</h2>
-        <!--Временно целиком весь блок как картику-->
-        <img class="hero-img" src="images/hero.jpg" width="1200" height="485" alt="Добро пожаловать в великолепную Седону.">
-        <!--Затем, наверное, фото гор сделать фоновой (не контент) а надписи вектором. Но это не точно...:
-        <img class="hero-title" src="images/hero/welcome.svg" width="187.7" height="44.7" alt="Добро пожаловать">
-        <img class="hero-title" src="images/hero/to_the_gorgeous.svg" width="256" height="28.78" alt="в великолепную">
-        <img class="hero-title" src="images/hero/sedona.svg" width="456,7" height="212.77" alt="Седону">
-        -->
-
-      </section>
-      <section class="advantages">
-        <h2 class="visual-hidden">Преимущества Седоны</h2>
-        <header class="section-head">
-          <p class="section-caption">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </header>
-      </section>
-      <section class="advantages-list">
-        <ul class="advantage-items">
-          <li class="advantage-item">
-            <h3>Настоящий городок</h3>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantage-img" src="images/advantages/into_sedona.jpg" width="800" height="385" alt="Верхние этажи домов на фоне горных вершин">
-          </li>
-          <li class="advantage-item">
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantage-item">
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantage-item">
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-          <li class="advantage-item">
-            <img class="advantage-img" src="images/advantages/devil_bridge.jpg" width="800" height="385" alt="Каньон">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </li>
-        </ul>
-      </section>
-      <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <header class="section-head">
-          <p class="section-caption">Приезжайте в Седону отдохнуть в комфорте и уюте! </p>
-          <p class="section-text">Опытный персонал и качественное обслуживание!</p>
-        </header>
-        <ul class="service-list">
-          <li class="service-item">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино! </p>
-          </li>
-          <li class="service-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="service-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и настоящего местного производства!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="search-hotel">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <header class="section-head">
-          <p class="section-caption">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="section-text">Опытный персонал и качественное обслуживание!</p>
-        </header>
-        <a class="search-hotel-link" href="#">
-          <span>Поиск гостиницы в Седоне</span>
-        </a>
-      </section>
-    </main>
-    <footer class="page-foter">
-      <section class="mailing">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="section-caption">Подпишитесь на рассылку</p>
-        <p class="section-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="email">Email</label>
-          <input type="email" name="email" placeholder="Ваш e-mail" id="email" required>
-          <button class="button-mailing" type="submit">Подписаться</button>
-        </form>
-      </section>
-      <ul class="social-list">
-        <h3 class="visually-hidden">Мы в соцсетях</h3>
-        <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
-            <img class="social-icon" src="images/icons/vkontakte.svg" width="24" height="14" alt="ВКонтакте">
-            <!-- альта ведь будет достаточно? это становится лишним: <span class="visually-hidden">ВКонтакте</span>??-->
+  <body class="body">
+    <div class="container-page">
+      <header class="page-header">
+        <p class="logo">
+          <a class="logo-link">
+            <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
           </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
-            <img class="social-icon" src="images/icons/telegram.svg" width="18" height="15.1" alt="Телеграмм">
-            <!-- альта ведь будет достаточно? это становится лишним: <span class="visually-hidden">Телеграмм</span>??-->
+        </p>
+        <nav class="navigation">
+          <ul class="navigation-lists">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Cедоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="user-navigation-lists">
+            <li class="user-navigation-item">
+              <a href="#" class="user-navigation-link">
+                <p class="visually-hidden">Поиск</p>
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#">
+                <p class="visually-hidden">Избранное</p>
+                <p class="number">12</p>
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="button user-navigation-link" href="#">
+                Хочу сюда!
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-index">
+        <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
+        <section class="hero">
+          <h2 class="visually-hidden">Великолепная Седона</h2>
+          <img class="hero-text" src="images/hero_text.svg" width="458" height="352"
+            alt="Добро пожаловать в великолепную Седону.">
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
+          <header class="advantages-head">
+            <p class="section-caption ">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </header>
+        </section>
+        <section class="advantages-list">
+          <ul class="advantage-items">
+            <li class="advantage-item">
+              <!--в дивах квадраты с преимуществами-->
+              <div class="advantage-container">
+                <h3 class="advantage-title">Настоящий городок</h3>
+                <p class="advantage-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="advantage-img" src="images/advantages/into_sedona.jpg" width="800" height="385"
+                alt="Верхние этажи домов на фоне горных вершин">
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-container advantage-container-2">
+                <h3 class="advantage-title">Небольшая площадь</h3>
+                <p class="advantage-text">Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-container advantage-container-3">
+                <h3 class="advantage-title">Красивая дорога</h3>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-container advantage-container-2">
+                <h3 class="advantage-title">Мало туристов</h3>
+                <p class="advantage-text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
+            <li class="advantage-item">
+              <img class="advantage-img" src="images/advantages/devil_bridge.jpg" width="800" height="385" alt="Каньон">
+              <div class="advantage-container">
+                <h3 class="advantage-title">Там есть мост дьявола</h3>
+                <p class="advantage-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="services">
+          <h2 class="visually-hidden">Услуги</h2>
+          <header class="section-head">
+            <p class="section-caption section-caption-2">Приезжайте в Седону отдохнуть в комфорте и уюте! </p>
+            <p class="section-text">Опытный персонал и качественное обслуживание!</p>
+          </header>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="advantage-container advantage-container-2 housing">
+                <h3 class="advantage-title">Жильё</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="advantage-container advantage-container-4 food">
+                <h3 class="advantage-title">Еда</h3>
+                <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="advantage-container advantage-container-2 souvenirs">
+                <h3 class="advantage-title">Сувениры</h3>
+                <p>Не только китайского, но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="search-hotel">
+          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <header class="section-head">
+            <p class="section-caption">Заинтересовались?</p>
+            <p class="section-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+              Седоне</p>
+          </header>
+          <a class="button search-hotel-link" href="#">
+            <span>Поиск гостиницы в Седоне</span>
           </a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="social-icon" src="images/icons/youtube.svg" width="22" height="17" alt="Ютуб">
-            <!-- альта ведь будет достаточно? это становится лишним: <span class="visually-hidden">Ютуб</span>??-->
-          </a>
-        </li>
-      </ul>
-      <p class="container">
+        </section>
+      </main>
+      <footer class="page-foter">
+        <section class="subscribe subscribe-color">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="email">Email</label>
+            <input class="input-subscribe " type="email" name="email" placeholder="Ваш e-mail" id="email" required>
+            <button class="button button-subscribe " type="submit">Подписаться</button>
+          </form>
+        </section>
+        <section class="social">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://vk.com/htmlacademy">
+                <img class="social-icon" src="images/icons/vkontakte.svg" width="24" height="14" alt="ВКонтакте">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://t.me/htmlacademy">
+                <img class="social-icon" src="images/icons/telegram.svg" width="18" height="16" alt="Телеграмм">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="social-icon" src="images/icons/youtube.svg" width="22" height="17" alt="Ютуб">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- <p class="phone-container"> -->
         <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </p>
-      <p class="container">
-        <a class="html_academy-link" href="https://htmlacademy.ru/">
-          <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
-        </a>
-      </p>
-    </footer>
+        <!-- </p> -->
+        <p class="container">
+          <a class="html_academy-link" href="https://htmlacademy.ru/">
+            <img src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
+          </a>
+        </p>
+      </footer>
+    </div>
+
     <!--модальное окно - с форматом записи дат надо разобраться и исправить-->
-    <div class="search-container">
-      <form class="search-hotel-modal" action="https://echo.htmlacademy.ru/" name="modal-search" method="post">
-        <p>Поиск гостиницы в Седоне</p>
-        <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть окно поиска</span>
-        </button>
-        <fieldset class="visit-date">
-          <label>
-            Дата заезда: <input class="calendar" type="date" name="arrival" value="2020-04-27"
-            min="2020-04-27">
-            <span class="wrong data">Мы не можем отправить вас в прошлое.</span>
-          </label>
-        </fieldset>
-        <fieldset class="visit-date">
-          <label>
-            Дата выезда: <input class="calendar" type="date" name="departure" value="2023-09-01"
-            min="2020-04-28">
-            <span class="good-date">На эти даты есть свободные номера. Пока есть.</span>
-          </label>
-        </fieldset>
-        <fieldset class="number-guests">
-          <legend class="visually-hidden">Количество взрослых гостей</legend>
-          <label for="adult"> Взрослые:</label>
-            <button class="minus-button">-</button>
-            <input class="adult" type="number" name="adult" id="adult" value="2" min="1">
-
-          <button class="plus-button">+</button>
-        </fieldset>
-        <fieldset class="number-guests">
-          <label for="kids">Дети:</label>
-            <span class="explanation">i</span>
-            <span class="explanation-kids visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            <button class="minus-button">-</button>
-            <input class="kids" type="number" name="kids" id="kids" value="2" min="0">
-            <button class="plus-button">+</button>
-
-        </fieldset>
-        <button class="modal-search-button" type="submit">Найти</button>
-      </form>
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" name="modal-search" method="post">
+          <p class="modal-title">Поиск гостиницы в Седоне</p>
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть окно поиска</span>
+          </button>
+          <fieldset class="visit-dates">
+            <label class="visit-date">
+              Дата заезда:
+              <input class="dates" type="text" name="arrival" value="27 апреля 2020">
+              <button class="date-setup" type="button">
+                <img class="data-img" src="images/icons/calendar.svg" alt="">
+              </button>
+              <p class="wrong-date">Мы не можем отправить вас в прошлое.</p>
+            </label>
+          </fieldset>
+          <fieldset class="visit-dates">
+            <label class="visit-date">
+              Дата выезда:
+              <input class="dates" type="text" name="departure" value="1 сентября 2023">
+              <button class="date-setup" type="button">
+                <img class="data-img" src="images/icons/calendar.svg" alt="">
+              </button>
+              <p class="good-date">На эти даты есть свободные номера. Пока есть.</p>
+            </label>
+          </fieldset>
+          <fieldset class="number-guests">
+            <legend class="visually-hidden">Количество взрослых гостей</legend>
+            <label for="adult"> Взрослые:</label>
+            <div class="buton-conteiner">
+              <button class="minus-button">
+                <span class="button-control">-</span>
+              </button>
+              <input class="volume-guests" type="text" name="adult" id="adult" value="2" min="1">
+              <button class="plus-button">
+                <span class="button-control">+</span>
+              </button>
+            </div>
+          </fieldset>
+          <fieldset class="number-guests">
+            <label for="kids">Дети:</label>
+            <p class="explanation">i</p>
+            <div class="container-note">
+              <span class="explanation-kids visually-hidden">Укажите количество детей, которые будут с вами, возраст
+                которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </div>
+            <div class="buton-conteiner">
+              <button class="minus-button">
+                <span class="button-control">-</span>
+              </button>
+              <input class="volume-guests" type="text" name="kids" id="kids" value="2" min="0">
+              <button class="plus-button">
+                <span class="button-control">+</span>
+              </button>
+            </div>
+          </fieldset>
+          <button class="modal-search-button" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </body>
 
