@@ -18,18 +18,31 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   background: #F2F2F2;
 }
 
 .container-page {
   width: 1200px;
+  margin: 0 auto;
   background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.body a {
+.container-page a {
   text-decoration: none;
 }
+
+/* .visually-hidden {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .logo {
+  margin: 0;
+  padding: 0;
+} */
 
 .navigation-link {
   font-family: inherit;
@@ -38,7 +51,6 @@ body {
   line-height: 24px;
   color: #000000;
   text-transform: capitalize;
-  text-decoration: none;
 }
 
 .button {
@@ -46,7 +58,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
-  padding: 0;
+  border: 0;
+  border-radius: 4px;
 }
 
 .user-navigation-link {
@@ -54,7 +67,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  border-radius: 4px;
 }
 
 .number {
@@ -71,15 +83,15 @@ body {
 }
 
 .main-index {
-  width: 1200px;
   text-align: center;
 }
 
 .hero {
-  width: 1200px;
   background-image: url("../images/hero_background.jpg");
-  background-size: 100% 485px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #8daab8;
+  margin: 0 auto 69px;
 }
 
 .hero-text {
@@ -93,12 +105,32 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 
 .section-text {
   font-size: 22px;
   line-height: 26px;
+  margin: 0 auto 90px;
+}
+
+.advantage-container {
+  max-width: 400px;
+  height: 385px;
+  background-color: #82B3D3;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding-left: 85px;
+  padding-right: 85px; */
+}
+
+.advantage-container-3 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-container-2 {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .main-index h3 {
@@ -106,20 +138,26 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.advantage-text {
+  margin: 0;
 }
 
 .section-caption-2 {
   width: 505px;
 }
 
-.service-item {
-  background-repeat: no-repeat;
+.advantage-container-4 {
+  background-color: #FFFFFF;
 }
 
 .housing {
   background-image: url("../images/icons/housing.svg");
   background-size: 75px 72px;
-
+  background-position: center;
 }
 
 .food {
@@ -132,25 +170,34 @@ body {
   background-size: 64px 76px;
 }
 
-.page-foter {
-  width: 1200px;
+.search-hotel {
+  margin-top: 0;
+  margin-bottom: 96px;
 }
 
-.mailing {
-  background-image: url("../images/backgrounds/subscribe.jpg");
-  background-size: 1200px 414.86px;
+.subscribe {
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
-.mailing-title {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  color: #000000;
   text-transform: uppercase;
 }
 
-.input-mailing {
+.subscribe-color {
+  background-image: url("../images/backgrounds/subscribe.jpg");
+  background-size: cover;
+  background-color: #8daab8;
+  color: #FFFFFF;
+}
+
+.input-subscribe {
   width: 452px;
   height: 52px;
   background-color: #F2F2F2;
@@ -159,7 +206,7 @@ body {
   border: 0;
   padding: 0;
   padding-left: 20px;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
@@ -167,13 +214,7 @@ body {
   margin-bottom: 104px;
 }
 
-.mailing-text {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.button-mailing {
+.button-subscribe {
   width: 232px;
   height: 52px;
   background: #82B3D3;
@@ -201,18 +242,18 @@ body {
 
 .modal-overlay {
   width: 1280px;
+  margin: 0 auto;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-
 .modal-container {
   width: 717px;
-  height: 576px;
   background-color: #FFFFFF;
   padding: 64px 70px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   font-weight: 700;
+  margin: 396px auto;
 }
 
 .modal-title {
@@ -311,7 +352,7 @@ body {
   padding: 15px 18px 18px 22px;
   background-color: #333333;
   border-radius: 10px;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .modal-search-button {
@@ -557,12 +598,6 @@ body {
 }
 
 .pagination-more {
-  background-color: transparent;
-  color: #000000;
-}
-
-.mailing-inner {
-  background-image: none;
   background-color: transparent;
   color: #000000;
 }
