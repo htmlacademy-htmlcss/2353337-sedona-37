@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -26,6 +32,17 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-conteiner {
@@ -43,10 +60,8 @@ body {
 }
 
 .page-header {
-  width: 1200px;
   margin: 0;
   padding: 0;
-  display: flex;
   background-color: #FFFFFF;
 }
 
@@ -56,17 +71,60 @@ body {
   display: flex;
 }
 
+.logo {
+  margin: 0;
+  margin-right: 30px;
+}
+
+
 .navigation {
   display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-right: auto;
 }
 
 .navigation-link {
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   text-transform: capitalize;
+  padding: 20px 16px;
+}
+
+/* юзерское меню не сделано, затупил, оставил, вернуться позже */
+
+.user-navigation-list {
+  max-width: 330px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.user-navigation-item {
+  display: block;
+  margin: 0;
+}
+
+.user-navigation-link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 44px;
 }
 
 .button {
@@ -76,13 +134,7 @@ body {
   color: #FFFFFF;
   border: 0;
   border-radius: 4px;
-}
-
-.user-navigation-link {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  padding: 8px 30px;
 }
 
 .number {
@@ -95,7 +147,6 @@ body {
   color: #FFFFFF;
   background: #7DB54F;
   border-radius: 10px;
-  margin-top: 25px;
 }
 
 .main-index {
@@ -103,7 +154,6 @@ body {
 }
 
 .main-container {
-  width: 1200px;
   margin: 0;
   padding: 0;
   flex-grow: 1;
@@ -128,7 +178,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto 25px;
+  margin: 0 auto 20px;
 }
 
 .section-text {
@@ -142,31 +192,19 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantage-container {
   width: 400px;
+  min-height: 385px;
   background-color: #82B3D3;
   margin: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* времнные поля для лучшего вида */
-  padding-top: 102px;
-  padding-bottom: 102px;
+  padding: 85px;
 }
 
 .advantage-img-container {
   display: flex;
-}
-
-.advantage-texts-container {
-  width: 230px;
-  margin: 0 auto;
-}
-
-.advantage-title {
-  width: 175px;
-  margin: 0 auto;
 }
 
 .advantage-container-2 {
@@ -199,35 +237,72 @@ body {
 
 .section-caption-2 {
   width: 505px;
+  margin-bottom: 20px;
 }
 
 .advantage-container-4 {
   background-color: #FFFFFF;
 }
 
-.housing {
-  background-image: url("../images/icons/housing.svg");
-  background-size: 75px 72px;
-  background-position: center;
+.advantages-list {
+  margin-bottom: 64px;
 }
 
-.food {
-  background-image: url("../images/icons/food.svg");
-  background-size: 74px 70px;
+.section-text-1 {
+  margin-bottom: 64px;
 }
 
-.souvenirs {
-  background-image: url("../images/icons/souvenir.svg");
-  background-size: 64px 76px;
+.service-list {
+  list-style-type: none;
+}
+
+.housing::before {
+  content: url("../images/icons/housing.svg");
+  display: inline-block;
+  width: 75px;
+  height: 72px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+.food::before {
+  content: url("../images/icons/food.svg");
+  display: inline-block;
+  width: 74px;
+  height: 70px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.souvenirs::before {
+  content: url("../images/icons/souvenir.svg");
+  display: inline-block;
+  width: 64px;
+  height: 76px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.service-item h3 {
+  margin-bottom: 30px;
+}
+
+.services {
+  margin-bottom: 96px;
+}
+
+.date-trip {
+  margin-bottom: 54px;
 }
 
 .search-hotel {
   margin-top: 0;
   margin-bottom: 96px;
+  padding: 0 300px;
 }
 
 .page-footer {
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -237,6 +312,14 @@ body {
   line-height: 26px;
   text-align: center;
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding: 96px 250px 104px;
+}
+
+
+.subscribe-contaimer {
+  min-width: 680px;
 }
 
 .subscribe-title {
@@ -245,6 +328,13 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-text {
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-color {
@@ -254,21 +344,19 @@ body {
   color: #FFFFFF;
 }
 
+/* не знаю пока как убрать пространство между инпутом и кнопкой */
 .input-subscribe {
-  width: 452px;
+  min-width: 450px;
   height: 52px;
   background-color: #F2F2F2;
   border-style: none;
   border-radius: 4px 0 0 4px;
   border: 0;
-  padding: 0;
-  padding-left: 20px;
+  padding: 8px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
-  margin-right: 0;
-  margin-bottom: 104px;
 }
 
 .button-subscribe {
@@ -284,18 +372,33 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 0;
+  padding: 8px 20px;
 }
 
 .footer-conteiner {
-  width: 1060px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: flex;
   justify-content: space-between;
+  padding: 40px 70px 30px;
+  align-items: center;
 }
 
 .filter-container {
   display: flex;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  min-width: 142px;
+  padding: 0;
+}
+
+.social-link {
+  display: block;
+  width: 47px;
+  padding: 0 10px;
 }
 
 .phone-link {
@@ -453,10 +556,6 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  margin: 0;
-}
-
 .catalog-title {
   margin: 0;
   font-weight: 700;
@@ -473,6 +572,10 @@ body {
   background-image: url(../images/icons/house.svg);
   background-size: 12px;
   background-repeat: no-repeat;
+}
+
+.filter-container {
+  display: flex;
 }
 
 .catalog-filter-title {
