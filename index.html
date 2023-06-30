@@ -8,16 +8,16 @@
   </head>
 
   <body class="body">
-    <div class="page-conteiner">
+    <div class="page-container">
       <header class="page-header">
-        <div class="conteiner-header">
+        <div class="container-header">
           <p class="logo">
             <a class="logo-link">
               <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
             </a>
           </p>
           <nav class="navigation">
-            <ul class="navigation-lists">
+            <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
               </li>
@@ -28,19 +28,19 @@
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <ul class="user-navigation-lists">
+            <ul class="user-navigation-list">
               <li class="user-navigation-item">
-                <a href="#" class="user-navigation-link">
+                <a class="user-navigation-link search-link" href="#">
                   <p class="visually-hidden">Поиск</p>
                 </a>
               </li>
               <li class="user-navigation-item">
-                <a class="user-navigation-link" href="#">
+                <a class="user-navigation-link favorite-link" href="#">
                   <p class="visually-hidden">Избранное</p>
                   <p class="number">12</p>
                 </a>
               </li>
-              <li class="user-navigation-item">
+              <li class="user-navigation-item user-wants">
                 <a class="button user-navigation-link" href="#">
                   Хочу сюда!
                 </a>
@@ -50,14 +50,14 @@
         </div>
       </header>
       <main class="main-index main-container">
-        <h1 class="visually-hidden" hidden>Неофициальный сайт города Седона</h1>
+        <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
         <section class="hero">
-          <h2 class="visually-hidden" hidden>Великолепная Седона</h2>
+          <h2 class="visually-hidden">Великолепная Седона</h2>
           <img class="hero-text" src="images/hero_text.svg" width="458" height="352"
             alt="Добро пожаловать в великолепную Седону.">
         </section>
         <section class="advantages">
-          <h2 class="visually-hidden" hidden>Преимущества Седоны</h2>
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
           <header class="advantages-head">
             <p class="section-caption ">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -67,7 +67,6 @@
           <ul class="advantage-items">
             <li class="advantage-item">
               <div class="advantage-img-container">
-                <!--здесь див, чтоб отцeнnhbровать текст в блоке преимуществ-->
                 <div class="advantage-container">
                   <div class="advantage-texts-container">
                     <h3 class="advantage-title">Настоящий городок</h3>
@@ -120,30 +119,30 @@
           <h2 class="visually-hidden">Услуги</h2>
           <header class="section-head">
             <p class="section-caption section-caption-2">Приезжайте в Седону отдохнуть в комфорте и уюте! </p>
-            <p class="section-text">Опытный персонал и качественное обслуживание!</p>
+            <p class="section-text section-text-1">Опытный персонал и качественное обслуживание!</p>
           </header>
           <ul class="service-list">
             <li class="service-item">
-              <div class="advantage-container advantage-container-2 housing">
-                <div class="advantage-texts-container">
+              <div class="advantage-container advantage-container-2">
+                <div class="advantage-texts-container service-container housing">
                   <h3 class="advantage-title">Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p class="advantage-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
               </div>
             </li>
             <li class="service-item">
-              <div class="advantage-container advantage-container-4 food">
-                <div class="advantage-texts-container">
+              <div class="advantage-container advantage-container-4">
+                <div class="advantage-texts-container service-container food">
                   <h3 class="advantage-title">Еда</h3>
-                  <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advantage-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </div>
             </li>
             <li class="service-item">
-              <div class="advantage-container advantage-container-2 souvenirs">
-                <div class="advantage-texts-container">
+              <div class="advantage-container advantage-container-2">
+                <div class="advantage-texts-container service-container souvenirs">
                   <h3 class="advantage-title">Сувениры</h3>
-                  <p>Не только китайского, но и настоящего местного производства!</p>
+                  <p class="advantage-text">Не только китайского, но и настоящего местного производства!</p>
                 </div>
               </div>
             </li>
@@ -153,8 +152,10 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <header class="section-head">
             <p class="section-caption">Заинтересовались?</p>
-            <p class="section-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-              Седоне</p>
+            <p class="section-text date-trip">
+              Укажите предполагаемые даты поездки, <br>
+              и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
           </header>
           <a class="button search-hotel-link" href="#">
             <span>Поиск гостиницы в Седоне</span>
@@ -163,15 +164,20 @@
       </main>
       <footer class="page-footer">
         <section class="subscribe subscribe-color">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="email">Email</label>
-            <input class="input-subscribe " type="email" name="email" placeholder="Ваш e-mail" id="email" required>
-            <button class="button button-subscribe " type="submit">Подписаться</button>
-          </form>
+          <div class="subscribe-contaimer">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-text">
+              Только полезная информация и никакого спама,<br>
+              честное бойскаутское!
+            </p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="email">Email</label>
+              <input class="input-subscribe " type="email" name="email" placeholder="Ваш e-mail" id="email" required>
+              <button class="button button-subscribe " type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
-        <div class="footer-conteiner">
+        <div class="footer-container">
           <section class="social">
             <h3 class="visually-hidden">Мы в соцсетях</h3>
             <ul class="social-list">
@@ -205,7 +211,7 @@
     </div>
 
     <!--модальное окно - временно скрыл-->
-    <div class="modal-overlay" hidden>
+    <div class="modal-overlay">
       <div class="modal-container">
         <form class="modal-form" action="https://echo.htmlacademy.ru/" name="modal-search" method="post">
           <p class="modal-title">Поиск гостиницы в Седоне</p>
@@ -235,7 +241,7 @@
           <fieldset class="number-guests">
             <legend class="visually-hidden">Количество взрослых гостей</legend>
             <label for="adult"> Взрослые:</label>
-            <div class="buton-conteiner">
+            <div class="buton-container">
               <button class="minus-button">
                 <span class="button-control">-</span>
               </button>
@@ -248,11 +254,11 @@
           <fieldset class="number-guests">
             <label for="kids">Дети:</label>
             <p class="explanation">i</p>
-            <div class="note-conteiner">
+            <div class="note-container">
               <span class="explanation-kids visually-hidden">Укажите количество детей, которые будут с вами, возраст
                 которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </div>
-            <div class="buton-conteiner">
+            <div class="buton-container">
               <button class="minus-button">
                 <span class="button-control">-</span>
               </button>
