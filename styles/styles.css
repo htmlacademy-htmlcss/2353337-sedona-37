@@ -55,9 +55,9 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.page-container a {
+/* .page-container a {
   text-decoration: none;
-}
+} */
 
 .page-header {
   margin: 0;
@@ -71,11 +71,12 @@ body {
   display: flex;
 }
 
-.logo {
+.logo-link {
   margin: 0;
   margin-right: 30px;
+  height: 70px;
+  margin-bottom: -6px;
 }
-
 
 .navigation {
   display: flex;
@@ -102,6 +103,7 @@ body {
   color: #000000;
   text-transform: capitalize;
   padding: 20px 16px;
+  text-decoration: none;
 }
 
 /* пользовательское меню  */
@@ -130,6 +132,7 @@ body {
   min-width: 44px;
   min-height: 100%;
   display: inline-block;
+  text-decoration: none;
 }
 
 .search-link::before {
@@ -153,12 +156,16 @@ body {
 .button {
   display: block;
   background: #756157;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FFFFFF;
   border: 0;
   border-radius: 4px;
   padding: 8px 30px;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .user-wants {
@@ -219,33 +226,49 @@ body {
   margin: 0 auto 90px;
 }
 
-.advantage-items {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
+/*  Карточки преимуществ
+    - переделать - сделано сложно, с излишней вложенностью, не нужные контейнеры*/
+    .advantage-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+    }
 
-.advantage-container {
-  width: 400px;
-  min-height: 385px;
-  background-color: #82B3D3;
-  margin: 0;
-  padding: 85px;
-}
+    .advantage-container {
+      width: 400px;
+      min-height: 385px;
+      background-color: #82B3D3;
+      margin: 0;
+      padding: 85px;
+    }
 
-.advantage-img-container {
-  display: flex;
-}
+    .advantage-img-container {
+      display: flex;
+    }
 
-.advantage-container-2 {
-  background-color: rgba(131, 179, 211, 0.12);
+    .advantage-container-2 {
+      background-color: rgba(131, 179, 211, 0.12);
 
-}
-.advantage-container-3 {
-  background: rgba(131, 179, 211, 0.2);
-}
+    }
+    .advantage-container-3 {
+      background: rgba(131, 179, 211, 0.2);
+    }
+
+    .main-index h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      margin-bottom: 62px;
+      text-align: center;
+    }
+
+    .advantage-text {
+      margin: 0;
+    }
 
 .main-index h3 {
   font-weight: 700;
@@ -276,7 +299,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.advantages-list {
+.advantages {
   margin-bottom: 64px;
 }
 
@@ -328,10 +351,20 @@ body {
   margin-bottom: 54px;
 }
 
+/*  Поиск гостиниц  */
+
 .search-hotel {
   margin-top: 0;
   margin-bottom: 96px;
   padding: 0 300px;
+}
+
+.search-hotel-link {
+  text-decoration: none;
+  display: inline-block;
+  max-width: 590px;
+  padding: 8px 50px;
+  line-height: 36px;
 }
 
 .page-footer {
@@ -340,22 +373,14 @@ body {
 }
 
 .subscribe {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   background-color: #FFFFFF;
-  display: flex;
-  justify-content: center;
   padding: 96px 250px 104px;
 }
 
-.subscribe-contaimer {
-  min-width: 680px;
-}
-
 .subscribe-title {
-  font-weight: 700;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   color: #FFF;
   text-transform: uppercase;
@@ -364,8 +389,13 @@ body {
 }
 
 .subscribe-text {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
   margin: 0;
   margin-bottom: 54px;
+
 }
 
 .subscribe-color {
@@ -375,11 +405,18 @@ body {
   color: #FFFFFF;
 }
 
-.subscribe-title-inner {
+.subscribe-contaimer-inner .subscribe-title {
   color: #000000;
 }
 
-/* не знаю пока как убрать пространство между инпутом и кнопкой */
+.subscribe-contaimer-inner .subscribe-text {
+  color: #333;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
 .input-subscribe {
   min-width: 450px;
   height: 52px;
@@ -392,6 +429,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
+
 }
 
 .button-subscribe {
@@ -438,6 +476,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 /*---------------модальное окно-----------------*/
@@ -620,6 +659,7 @@ body {
 .filter-container {
   display: flex;
 }
+
 .catalog-filter {
   display: flex;
   justify-content: space-between;
@@ -751,7 +791,7 @@ body {
 
 .showing-list {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -777,21 +817,21 @@ body {
 
 .show-cards::after {
   content: url(../images/icons/display_1.svg);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .show-one::after {
   content: url(../images/icons/display_2.svg);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .show-list::after {
   content: url(../images/icons/display_3.svg);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -803,7 +843,7 @@ body {
   margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   list-style-type: none;
   box-sizing: content-box;
 }
@@ -871,6 +911,7 @@ body {
   height: 36px;
   border-radius: 4px;
   padding: 8px;
+  text-decoration: none;
 }
 
 .button-favorites {
@@ -896,7 +937,8 @@ body {
   justify-content: space-between;
   margin: 0;
 }
- .number-stars-4::before {
+
+.number-stars-4::before {
   content: url(../images/icons/star-4.svg);
 }
 
