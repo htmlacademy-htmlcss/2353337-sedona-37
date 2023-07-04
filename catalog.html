@@ -66,6 +66,8 @@
           </header>
           <section class="catalog">
             <h2 class="visually-hidden">Список товаров с фильтрами и сортировкой</h2>
+
+            <!-- ----------- фильтры на фоне с картинкой ------------------------------------------------------ -->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="filter-container">
                 <fieldset class="catalog-filter-group filter-group-1">
@@ -91,8 +93,8 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
+                <fieldset class="catalog-filter-group filter-group-2">
+                  <legend class="catalog-filter-title filter-title-2">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item filter-item-2">
                       <label class="control">
@@ -115,8 +117,9 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="filter-container">
-                <fieldset class="catalog-filter-group filter-price  filter-group-1">
+              <!-- ----------- фильтр по цене  ------------- -->
+              <div class="filter-container filter-container-2">
+                <fieldset class="catalog-filter-group filter-price filter-group-1">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <label class="visually-hidden" for="price-from">
                     Стоимость от
@@ -128,6 +131,7 @@
                   <input class="price-input price-input-right" type="number" name="price-till" id="price-till"
                     max="9000" placeholder="9000 до">
                 </fieldset>
+                <!-- ----------- фильтр применить/сбросить  ------------- -->
                 <div class="button-filter-container">
                   <button class="button-filter button-use" type="submit">Применить</button>
                   <button class="button-filter button-reset" type="reset">Сбросить</button>
@@ -138,6 +142,8 @@
         </div>
 
         <div class="select-container">
+
+          <!-- --------- сортировка --------- -->
           <div class="select-head-container">
             <p class="found"> Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
@@ -165,6 +171,7 @@
               </li>
             </ul>
           </div>
+
           <!-- --------- карточки отелей --------- -->
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
@@ -207,13 +214,13 @@
                   alt="Гора, голубое небо">
               </a>
               <a class="card-link-name" href="#">
-                <h3 class="hotel-name">Desert Quail Inn<< /h3>
+                <h3 class="hotel-name">Desert Quail Inn</h3>
               </a>
               <p class="hotel-sort sort">Гостиница</p>
               <p class="hotel-sort value">От 2500 ₽</p>
               <a class="more-info button hotel-link" href="#">Подробнее</a>
               <button class="more-info button button-favorites" type="submit">В избранное</button>
-              <p class="stars stars-container number-stars-4">
+              <p class="stars stars-container number-stars-3">
                 <span class="visually-hidden">Уровень - 3 звезды</span>
               </p>
               <p class="stars rating">Рейтинг: 6,9</p>
@@ -224,13 +231,13 @@
                   alt="Ночные небо и гора">
               </a>
               <a class="card-link-name" href="#">
-                <h3 class="hotel-name">GreenTree Inn<< /h3>
+                <h3 class="hotel-name">GreenTree Inn</h3>
               </a>
               <p class="hotel-sort sort">Гостиница</p>
               <p class="hotel-sort value">От 1500 ₽</p>
               <a class="more-info button hotel-link" href="#">Подробнее</a>
               <button class="more-info button button-favorites" type="submit">В избранное</button>
-              <p class="stars stars-container number-stars-4">
+              <p class="stars stars-container number-stars-2">
                 <span class="visually-hidden">Уровень - 2 звезды</span>
               </p>
               <p class="stars rating">Рейтинг: 5,0</p>
