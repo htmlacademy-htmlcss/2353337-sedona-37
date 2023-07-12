@@ -55,7 +55,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/*  Хедер сайта  */
+/*  Хедер  */
 
 .page-header {
   margin: 0;
@@ -106,7 +106,7 @@ body {
 
 .navigation-link {
   display: block;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -126,7 +126,7 @@ body {
   display: block;
 }
 
-/* пользовательское меню  */
+/* Пользовательское меню  */
 
 .user-navigation-list {
   list-style-type: none;
@@ -161,7 +161,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
-  transition: transform 0.4s;
 }
 
 .search-link {
@@ -170,6 +169,12 @@ body {
 
 .favorite-link {
   background-image: url(../images/icons/heart.svg);
+}
+
+.search-link:hover,
+.favorite-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
 }
 
 /* в избранном */
@@ -182,26 +187,30 @@ body {
   text-align: center;
   color: #FFFFFF;
   position: absolute;
-  top: 15px;
-  left: 21px;
+  top: 13px;
+  left: 22px;
+  display: block;
+  min-width: 20px;
+  height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
-  padding: 3px;
+  padding: 5px 4px;
 }
 
 .button {
   display: block;
   background: #756157;
-  border: 0;
+  border: none;
   border-radius: 4px;
   padding: 8px 30px;
 
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .user-item-wants {
@@ -214,16 +223,14 @@ body {
   margin-left: 20px;
 }
 
-.user-wants:hover {
-  background-color: #615048;
-}
-
+.user-wants:hover,
 .user-wants:focus {
   background-color: #615048;
 }
 
 .user-wants:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-index {
@@ -485,7 +492,7 @@ body {
   border-radius: 4px 0 0 4px;
   border: 0;
   padding: 8px 20px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
@@ -507,7 +514,7 @@ body {
   background: #82B3D3;
   border-style: none;
   border-radius: 0 4px 4px 0;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -560,7 +567,7 @@ body {
   outline: none;
 }
 
-.social-link:active path{
+.social-link:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -638,7 +645,7 @@ body {
 }
 
 .modal-form input {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -683,7 +690,7 @@ body {
 }
 
 .volume-guests {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 31px;
   text-align: center;
 }
@@ -726,7 +733,7 @@ body {
   color: #FFFFFF;
 }
 
-/*---------------Каталог-----------------*/
+/*  Каталог  */
 
 /*  Контейнер для аголовока и фильтров - всё что на фоне картинки  */
 
@@ -759,8 +766,6 @@ body {
   content: url(../images/icons/house.svg);
   display: inline-block;
   min-width: 13px;
-  /* min-height: 13px; */
-  /* position: relative; */
   margin-right: 10px;
 }
 
@@ -860,7 +865,7 @@ body {
   height: 36px;
   border: 0;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -908,13 +913,22 @@ body {
   border-radius: 4px;
   padding-left: 20px;
   margin-right: 70px;
-
-  font-family: inherit;
+  background: #FFF;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
 
-.showing-list {
+.select-option {
+  word-break: break-all;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #68A2CA;
+}
+
+.view-list {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -922,11 +936,11 @@ body {
   padding: 0;
 }
 
-.showing-item:not(:last-child) {
+.view-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-showing {
+.button-view {
   display: block;
   width: 48px;
   height: 48px;
@@ -936,7 +950,15 @@ body {
   padding-top: 14px;
 }
 
-.button-showing-active {
+.button-view:hover {
+  border-color: #000000;
+}
+
+.button-view:focus {
+  border-color: #68A2CA;
+}
+
+.button-view:active {
   border-color: #000000;
 }
 
@@ -1034,21 +1056,29 @@ body {
   text-align: right;
 }
 
-.more-info {
+.hotel-more-info {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
   color: #FFFFFF;
-}
-
-.hotel-link {
-  display: inline-block;
+  display: block;
   width: 140px;
   height: 36px;
   border-radius: 4px;
   padding: 8px;
-  text-decoration: none;
+}
+
+.hotel-more-info:hover,
+.hotel-more-info:focus {
+  background-color: #615048;
+}
+
+.hotel-more-info:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favorites {
@@ -1065,8 +1095,29 @@ body {
   height: 36px;
 }
 
-.button-favorite-done {
+.button-favorites:hover,
+.button-favorites:focus {
+  background-color: #68A2CA;
+}
+
+.button-favorites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.button-in-favorite {
   background-color: #7DB54F;
+}
+
+.button-in-favorite:hover,
+.button-in-favorite:focus {
+  background-color: #6C9E42;
+}
+
+.button-in-favorite:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .stars {
@@ -1134,7 +1185,7 @@ body {
 .pagination-link {
   background-color: #82B3D3;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1149,15 +1200,46 @@ body {
   padding: 12px 18px;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   background-color: #F2F2F2;
   color: #000000;
 }
 
 .pagination-more {
   background-color: transparent;
+  font-family: PT Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
   color: #000000;
+  text-align: center;
+  padding-top: 17px;
 }
+
+.pagination-more:hover {
+  background-color: #F2F2F2;
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
 
 .phone-link {
   text-decoration: none;
