@@ -68,17 +68,14 @@ body {
   padding-right: 70px;
 }
 
-/* .header-container {
-  width: 1060px;
-  margin: 0 auto;
-} */
-
 .logo-link {
-  margin: 0;
-  height: 70px;
+  width: 140px;
+  height: auto;
   position: absolute;
   top: 0;
   left: 70px;
+  margin: 0;
+  cursor: pointer;
 }
 
 .logo-link:focus {
@@ -263,7 +260,7 @@ body {
 .advantages-head {
   padding-top: 69px;
   padding-bottom: 90px;
-  padding: 60px 160px 90px;
+  padding: 69px 160px 90px;
 }
 
 .section-caption {
@@ -292,20 +289,34 @@ body {
 }
 
 .advantage-item {
-  min-width: 400px;
+  /* min-width: 400px; */
   margin: 0;
   background-color: rgba(131, 179, 211, 0.12);
   word-break: break-word;
+  padding: 113px 0;
+}
+
+.advantage-item-img {
+  padding: 102px 0;
 }
 
 .advantage-item-edges {
-  grid-column: 3 span;
+  /* grid-column: 3 span; */
   display: flex;
 }
 
+.advantage-img-item {
+  grid-column: 2 span;
+}
+
+.advantage-img {
+  display: block;
+}
+
 .advantage-container {
-  width: 400px;
-  padding: 102px 85px;
+  width: 235px;
+  /* padding: 103px 85px 102px; */
+  margin: 0 auto;
 }
 
 .advantages .advantage-item:first-child,
@@ -327,9 +338,10 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
+  width: 180px;
 }
 
-.advantage-title:after {
+.advantage-list .advantage-title:after {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
@@ -351,6 +363,7 @@ body {
   margin: 0;
 }
 
+/*  Сервис-инфраструктура  */
 .services-container {
   width: 100%;
   padding: 64px 160px;
@@ -364,9 +377,12 @@ body {
   flex-wrap: wrap;
 }
 
-.service-list .advantage-container {
-  padding: 80px 85px;
+.service-item {
+  width: 400px;
+  padding: 80px 0;
 }
+/* .service-list .advantage-container {
+} */
 
 .housing::before {
   content: url("../images/icons/housing.svg");
@@ -413,7 +429,7 @@ body {
 .search-hotel-link {
   text-decoration: none;
   display: inline-block;
-  max-width: 590px;
+  width: 376px;
   padding: 8px 50px;
   line-height: 36px;
 }
@@ -602,7 +618,7 @@ body {
 }
 
 
-/*---------------модальное окно-----------------*/
+/* Модальное окно  */
 
 .modal-overlay {
   position: fixed;
@@ -614,7 +630,6 @@ body {
   margin: 0 auto;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
 
 .modal {
   position: relative;
@@ -977,6 +992,7 @@ background: #E6E6E6;
   font-size: 60px;
   line-height: 78px;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
@@ -1135,7 +1151,7 @@ background: #E6E6E6;
   width: 288px;
   display: flex;
   gap: 2px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .price-input {
@@ -1237,7 +1253,7 @@ background: #E6E6E6;
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -2px;
 }
 
 .button-filter-container {
@@ -1305,7 +1321,7 @@ background: #E6E6E6;
 .select-container {
   width: 100%;
   margin: 0;
-  padding: 50px 70px 60px;
+  padding: 48px 70px 60px;
 }
 
 .select-head-container {
@@ -1322,6 +1338,7 @@ background: #E6E6E6;
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
+  margin-top: 6px;
 }
 
 .select-control {
@@ -1405,7 +1422,7 @@ background: #E6E6E6;
   align-items: center;
 }
 
-/* ------------------------- карточки гостиниц ------------------------- */
+/* Карточки гостиниц  */
 
 .hotel-card-list {
   max-width: 100%;
@@ -1421,7 +1438,7 @@ background: #E6E6E6;
 
 .hotel-card-item {
   width: 340px;
-  padding: 20px;
+  padding: 19px;
   text-align: center;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
