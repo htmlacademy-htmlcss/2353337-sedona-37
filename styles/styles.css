@@ -257,7 +257,7 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: #3f5e72;
-  background-image: url("../images/hero-decor.svg"), url("../images/hero.jpg");
+  background-image: url("../images/backgrounds/hero-decor.svg"), url("../images/backgrounds/hero.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom -1px, center top;
   background-size: 100% auto, cover;
@@ -281,7 +281,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .section-text {
@@ -430,11 +430,11 @@ body {
 /*  Поиск гостиниц  */
 
 .search-hotel {
-  padding: 96px 160px;
+  padding: 93px 160px;
 }
 
 .date-trip {
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .search-hotel-link {
@@ -442,7 +442,11 @@ body {
   display: inline-block;
   width: 376px;
   padding: 8px 50px;
+  font-family: inherit;
   line-height: 36px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   outline: none;
 }
 
@@ -470,7 +474,7 @@ body {
 .subscribe {
   text-align: center;
   background-color: #ffffff;
-  padding: 96px 250px 104px;
+  padding: 99px 257px 104px;
 }
 
 .subscribe-title {
@@ -480,7 +484,7 @@ body {
   color: #FFF;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .subscribe-text {
@@ -571,8 +575,8 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 40px 70px 30px;
+  justify-content: flex-start;
+  padding: 45px 70px 30px;
   align-items: flex-start;
 }
 
@@ -583,6 +587,7 @@ body {
   width: 180px;
   padding: 0;
   margin: 0;
+  margin-right: 63px;
 }
 
 .social-link {
@@ -608,6 +613,7 @@ body {
 .phone-container {
   width: 600px;
   text-align: center;
+  margin-right: auto;
 }
 
 .phone-link {
@@ -757,7 +763,6 @@ body {
   padding: 12px 20px;
   margin-bottom: 4px;
   position: relative;
-  opacity: 0.6000000238418579;
 }
 
 .field-date-text {
@@ -779,6 +784,7 @@ body {
   position: absolute;
   top: 14px;
   right: 20px;
+  background-color: transparent;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
   width: 18px;
@@ -787,6 +793,15 @@ body {
   cursor: pointer;
 }
 
+
+.date-setup:hover,
+.date-setup:focus {
+  outline: none;
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+
 .date-note {
   margin: 0;
   font-weight: 400;
@@ -794,7 +809,6 @@ body {
   line-height: 21px;
   text-transform: none;
   margin-left: 157px;
-  opacity: 0;
 }
 
 .modal-form label {
@@ -802,12 +816,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-}
-
-.modal-form span {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .wrong-date {
@@ -818,7 +826,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 25px;
 }
 
 .number-guests {
@@ -889,6 +897,12 @@ body {
   opacity: 0.20000000298023224;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
 .volume-guests {
   margin: 0;
   padding: 0;
@@ -903,13 +917,14 @@ body {
   text-align: center;
   color: #000000;
   cursor: pointer;
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 
-.volume-guests::-webkit-outer-spin-button,
-.volume-guests::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
-  margin: 0;
+.volume-guests:hover,
+.volume-guests:focus {
+  outline: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .plus-button {
@@ -945,7 +960,9 @@ body {
   display: block;
 }
 
-.tooltip-toggle:hover .tooltip-icon {
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+  outline: none;
   transform: scale(0.8);
   transition: transform;
 }
@@ -1004,6 +1021,7 @@ body {
 .modal-search-button:hover,
 .modal-search-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .modal-search-button:active .search-text {
@@ -1205,6 +1223,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  -moz-appearance: textfield;
 }
 
 .price-input-right {
@@ -1474,7 +1493,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
   list-style-type: none;
   box-sizing: content-box;
   display: grid;
@@ -1682,6 +1701,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .pagination-link:active {
@@ -1713,7 +1733,8 @@ body {
   padding-top: 17px;
 }
 
-.pagination-more:hover {
+.pagination-more:hover,
+.pagination-more:focus {
   background-color: #f2f2f2;
   transform: scale(1.2);
   transition: transform 0.3s;
